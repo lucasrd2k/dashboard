@@ -42,7 +42,7 @@
           if (empty($_FILES["fundo"]["name"]) === false) {
             $arquivo = $_FILES["fundo"];
             //diretorio dos arquivos
-            $pasta_dir = "./arquivos/img/";
+            $pasta_dir = "localhost/dashboard/arquivos/img/";
             // Faz o upload da imagem
             $arquivo_nome = $pasta_dir . time() . $arquivo["name"];
             //salva no banco
@@ -72,7 +72,7 @@
           if (empty($_FILES["fundo"]["name"]) === false) {
             $arquivo = $_FILES["fundo"];
             //diretorio dos arquivos
-            $pasta_dir = "./arquivos/img/";
+            $pasta_dir = "localhost/dashboard/arquivos/img/";
             // Faz o upload da imagem
             $arquivo_nome = $pasta_dir . time() . $arquivo["name"];
             //salva no banco
