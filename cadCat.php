@@ -2,6 +2,7 @@
         $m = false;
 
         include "header.php";
+        include "var.php";
 
         $nome = "";
         $descricao = "";
@@ -42,7 +43,7 @@
           if (empty($_FILES["fundo"]["name"]) === false) {
             $arquivo = $_FILES["fundo"];
             //diretorio dos arquivos
-            $pasta_dir = "localhost/dashboard/arquivos/img/";
+            $pasta_dir = raiz . "img/";
             // Faz o upload da imagem
             $arquivo_nome = $pasta_dir . time() . $arquivo["name"];
             //salva no banco
@@ -60,7 +61,7 @@
             $sql .= " WHERE id = $id;";
             echo $sql;
             if (mysqli_query($conn, $sql)){
-              echo "<script>window.location.replace('categorias.php');</script>";
+              //echo "<script>window.location.replace('categorias.php');</script>";
             }
             else{
               $msg = "Erro ao editar categoria.";
@@ -72,7 +73,7 @@
           if (empty($_FILES["fundo"]["name"]) === false) {
             $arquivo = $_FILES["fundo"];
             //diretorio dos arquivos
-            $pasta_dir = "localhost/dashboard/arquivos/img/";
+            $pasta_dir = raiz . "img/";
             // Faz o upload da imagem
             $arquivo_nome = $pasta_dir . time() . $arquivo["name"];
             //salva no banco

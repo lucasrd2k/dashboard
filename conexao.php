@@ -1,6 +1,8 @@
 <?php
 	$servidor = "localhost";
+	// $usuario = "hellmann";
 	$usuario = "root";
+	// $senha = "VPSHellmann123@";
 	$senha = "";
 	$dbname = "coacher";
 	

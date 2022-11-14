@@ -1,0 +1,26 @@
+{
+    "name": "app-apis",
+    "version": "1.0.0",
+    "description": "COMO RODAR O PROJETO BAIXADO\r Instalar todas as dependencias indicada pelo package.json\r ### npm install",
+    "main": "app.js",
+    "scripts": {
+        "test": " nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "lucasrd2k"
+    },
+    "author": "Lucas Rodrigues Dias",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "fs": "^0.0.1-security",
+        "mariadb": "^3.0.1",
+        "md5": "^2.3.0",
+        "mysql2": "^2.3.3",
+        "sequelize": "^6.24.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}

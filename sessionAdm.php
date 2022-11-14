@@ -8,7 +8,7 @@
 		$nomes = $_SESSION['nome'];
 	}
 	else{
-		header ("Location: login.php");
+		header ("Location: index.php");
         echo "<script>window.location.replace('login.php');</script>";
 	}
 ?>
